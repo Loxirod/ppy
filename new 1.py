@@ -7,3 +7,5 @@ webbrowser.open(url)
 #git push
 #git commit -m "add script for open web page"
 #git status
+
+#python venv "nazwa folderu" tworzy folder wirtualny?
