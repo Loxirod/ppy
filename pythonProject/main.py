@@ -82,21 +82,41 @@ odp7=input("c: inna: po prostu wpisz\n")
 
 print("odpowiedzi:           ")
 print(" ")
-
 print("Najczęstszym sposobem spędzania wolnego czasu jest dla Ciebie:")
 print(odp1)
-print("W jakich okolicznościach czytasz książki najczęściej?")
+if(odp1=="a"): print(" oglądanie telewizji/filmów/seriali")
+if(odp1=="b"): print(" czytanie książek/czasopism")
+
+print("\nW jakich okolicznościach czytasz książki najczęściej?")
 print(odp2)
-print("Jeżeli spędzasz czas wolny czytając książki, jaki jest główny powód takiego wyboru? ")
+if(odp2=="a"):print(" podczas podróży")
+if (odp2 == "b"):print(" w czasie wolnym (po pracy, na urlopie)")
+
+print("\nJeżeli spędzasz czas wolny czytając książki, jaki jest główny powód takiego wyboru? ")
 print(odp3)
-print("Po książki w jakiej formie sięgasz najczęściej?")
+if(odp3=="a"):print(" chęć poszerzenia wiedzy")
+if (odp3 == "b"):print(" czytanie mnie relaksuje/odpręża")
+
+print("\nPo książki w jakiej formie sięgasz najczęściej?")
 print(odp4)
-print("Ile książek czytasz średnio w ciągu roku? ")
+if(odp4=="a"):print(" papierowej (tradycyjnej)")
+if (odp4 == "b"):print(" e-booki (książki elektroniczne) na komputerze")
+
+print("\nIle książek czytasz średnio w ciągu roku? ")
 print(odp5)
-print("Jak często średnio czytasz książki?")
+if(odp5=="a"):print(" 0")
+if (odp5 == "b"):print(" 1")
+
+print("\nJak często średnio czytasz książki?")
 print(odp6)
-print("Po jakie gatunki książek sięgasz najczęściej?")
-print (odp7)
+if(odp6=="a"):print(" raz dziennie")
+if (odp6 == "b"):print(" 2 razy w tygodniu")
+
+
+print("\nPo jakie gatunki książek sięgasz najczęściej? ")
+print(odp7)
+if(odp7=="a"):print(" dramat")
+if (odp7 == "b"):print(" Niemieckie Komedie Romantyczne")
 
 
 
