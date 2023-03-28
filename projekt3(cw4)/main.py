@@ -38,14 +38,14 @@ def cezar(line,key):
     for letter in cezarLine:
         for x in alphabet:
             if (letter==x):
-                while(alphabet.index(x)+key>25):
-                    key-=25
+                while(alphabet.index(x) + key > len(alphabet)-1):
+                    key-=len(alphabet)
                # print(alphabet.index(x)+key)
-                print(chr(97+alphabet.index(x)+key))
+                #print(chr(97+alphabet.index(x)+key))
+                list+=chr(97+alphabet.index(x)+key)
 
-
-
+    print(list)
 #a=97
 
 
-cezar("HELLO",25)
+cezar("HelloAZ",53)
