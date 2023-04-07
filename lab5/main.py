@@ -15,10 +15,6 @@ def send_email(subject, body, sender, recipients, password):
                 smtp_server.sendmail(sender, recipients, msg.as_string())
                 smtp_server.quit()
 
-
-
-
-
 def loadFile(filepath, list):
     with open(filepath) as file_object:
         for line in file_object:
@@ -33,7 +29,6 @@ def loadFile(filepath, list):
             else:
                 users = {"Email": temp[0], "Imie": temp[1], "Nazwisko": temp[2], "Punkty": temp[3], "Graded": temp[4],"Mailed": temp[5].rstrip("\n")}
                 list.append(users)
-
 
 def saveFile(list):
     filepath = "studentsOut.txt"
@@ -51,7 +46,6 @@ def saveFile(list):
             file_object.write(line)
             file_object.write("\n")
 
-
 def returnGrade(gradeString):
     points = int(gradeString)
     if (points < 50): return 2.0
@@ -60,7 +54,6 @@ def returnGrade(gradeString):
     if (points > 70 and points < 81): return 4.0
     if (points > 80 and points < 91): return 4.5
     if (points > 90): return 5.0
-
 
 def addStudent(list, dict):
     temp = dict.split(",")
@@ -81,7 +74,6 @@ def printStudentList(list):
     for e in list:
         print(e)
 
-
 def removeStudent(list, mailId):
     iterator = 0
     for e in list:
@@ -95,13 +87,9 @@ def removeStudent(list, mailId):
     print("-------------------------------------------------")
     saveFile(list)
 
-
-
-
 # ------------------------------------------------------MAIN--------------------------------------------------------------------------------------
 list = []
 loadFile("students.txt", list)
-
 dict = "-xx@xxx.x-,-NaMe-,-SuRnAmE-,1111"
 
 addStudent(list, dict)
